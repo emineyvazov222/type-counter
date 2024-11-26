@@ -7,17 +7,22 @@
 Type Counter is a Java application that analyzes words in a sentence entered by the user and determines their type (string, integer, or double).
 
 
-## Project Structuring:
+## Functionality
 
-src/
-├── org/
-│   └── spring/
-│       ├── Solution.java   // Giriş üçün əsas sinif
-│       └── Result.java     // Analiz üçün məntiq
-test/
-├── org/
-│   └── spring/
-│       └── ResultTest.java // JUnit testlər
+This program defines the following:
+
+The total number of words in the sentence.
+Number of whole numbers (integer).
+Number of decimal numbers (double).
+Number of string statements (string).
+
+## Program Structuring
+
+- Solution class:
+    Accepts user input and calls the Result.typeCounter() method.
+- Result class:
+    The typeCounter() method analyzes the types of words.
+    It checks the type of words with the isInteger() and isDouble() helper methods.
 
 
 
